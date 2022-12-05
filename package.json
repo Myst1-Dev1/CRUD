@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "next start",
+    "client": "cd client && npm start",
     "lint": "next lint"
   },
   "dependencies": {
